@@ -9,3 +9,4 @@ numpy==1.24.3
 pandas==2.0.1
 panel==0.14.0
 shapely==2.0.1
+wheel==0.40.0
