@@ -65,7 +65,7 @@ class MeteoPlot:
 
 
 def main():
-    conn=sql.connect(r'C:\\Users\\Utente82\\vscode\\met\\variabili_meteorologiche.db')
+    conn=sql.connect(r'variabili_meteorologiche.db')
     query="select b.name as city,c.name as variable,b.x as x, b.y as y,b.z as z,c.var_id as var_id,a.time,a.value from DATA a \
     inner JOIN STATIONS b \
     on a.city_id=b.city_id \
@@ -73,7 +73,7 @@ def main():
     df=pd.read_sql(query,conn)
     df['time'] = pd.to_datetime(df['time'])
 
-    fname = r'C:\\Users\\Utente82\\vscode\\met\\gadm41_ITA_shp\\gadm41_ITA_1.shp'
+    fname = r'gadm41_ITA_1.shp'
     rdf=gpd.read_file(fname)
     ven=(rdf["NAME_1"]=='Veneto')
     venplot=rdf[ven].to_crs(3003).hvplot(color='lightgray').opts(height=600)#*plot
