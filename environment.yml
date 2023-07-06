@@ -1,18 +1,19 @@
 ﻿name: met
 channels:
   - conda-forge
+  - pyviz
 dependencies:
-  - bokeh=2.4.3=pyhd8ed1ab_3
-  - cartopy=0.21.1=py311h178a126_1
-  - geopandas=0.13.0=pyhd8ed1ab_0
-  - geoviews=1.9.6=pyhd8ed1ab_0
-  - holoviews=1.16.0=pyhd8ed1ab_0
-  - hvplot=0.8.3=py_0
+  - bokeh=2.4.3
+  - cartopy=0.21.1
+  - geopandas=0.13.0
+  - geoviews=1.9.6
+  - holoviews=1.16.0
+  - hvplot=0.8.3
   - jupyter-panel-proxy
-  - matplotlib=3.7.1=py311h1ea47a8_0
-  - numpy=1.24.3=py311h0b4df5a_0
-  - pandas=2.0.1=py311hf63dbb6_1
-  - panel=0.14.0=pyhd8ed1ab_0
-  - python=3.11.3=h2628c8c_0_cpython
-  - shapely=2.0.1=py311h343093d_1
+  - matplotlib=3.7.1
+  - numpy=1.24.3
+  - pandas=2.0.1
+  - panel=0.14.0
+  - python=3.11.3
+  - shapely=2.0.1
 prefix: C:\Users\Utente82\miniconda3\envs\met
