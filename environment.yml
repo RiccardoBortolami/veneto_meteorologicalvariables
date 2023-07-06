@@ -1,7 +1,7 @@
 ﻿name: met
 channels:
-  - pyviz
   - conda-forge
+  - pyviz
   - defaults
 dependencies:
   - asttokens=2.2.1=pyhd8ed1ab_0
