@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - pyviz
 dependencies:
+  - nbserverproxy
   - bokeh=2.4.3
   - cartopy=0.21.1
   - geopandas=0.13.0
